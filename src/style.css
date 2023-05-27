@@ -1,5 +1,5 @@
 body {
-  background-color: #f9f7fe;
+  background-color: darkolivegreen;
   font-family: sans-serif;
 }
 
@@ -25,14 +25,15 @@ select {
 .container {
   max-width: 600px;
   margin: 60px auto;
+  background-color: silver;
   padding: 30px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.168) 0px 7px 29px 0px;
   border-radius: 10px;
 }
 
 .city {
   display: flex;
-  margin: 10px 0;
+  margin: 20px 0;
   justify-content: space-between;
   padding: 30px 0;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
