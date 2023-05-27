@@ -8,7 +8,38 @@
     <title>Clock Project</title>
   </head>
   <body>
-    <h1>🕰️ World Clock 🕰️</h1>
+    <div class="container">
+      <h1>🕰️ World Clock 🕰️</h1>
+      <select id="city">
+        <option value="">☪︎ Select a city ☪︎</option>
+        <option value="Asia/Tokyo">Tokyo 🇯🇵</option>
+        <option value="Europe/Paris">Paris 🇫🇷</option>
+        <option value="Pacific/Honolulu">Honolulu 🌺</option>
+      </select>
+      <div id="cities">
+        <div class="city" id="Tokyo">
+          <div>
+            <h2>Tokyo</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+        <div class="city" id="Paris">
+          <div>
+            <h2>Paris</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+        <div class="city" id="Honolulu">
+          <div>
+            <h2>Honolulu</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+      </div>
+    </div>
     <footer>
       Coded by, <strong>Miranda Talbot 🦊</strong>, open sourced on<a
         href="https://github.com/Mysticfox456/Clock-Project"
