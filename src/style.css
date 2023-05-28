@@ -1,5 +1,8 @@
 body {
-  background-color: darkolivegreen;
+  background-image: url("https://i.pinimg.com/originals/9a/3a/16/9a3a16b44f1ebbc4d66408a636269465.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: inherit;
   font-family: sans-serif;
 }
 
@@ -25,10 +28,13 @@ select {
 .container {
   max-width: 600px;
   margin: 60px auto;
-  background-color: silver;
-  padding: 30px;
-  box-shadow: rgba(100, 100, 111, 0.168) 0px 7px 29px 0px;
-  border-radius: 10px;
+  background-image: url("https://www.pngmart.com/files/11/Cute-Heart-Frame-PNG-Image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image:
+  padding: 10px;
+  box-shadow: rgba #5d5d5d 0px 7px 29px 0px;
+  border-radius: 40px;
 }
 
 .city {
@@ -57,11 +63,16 @@ select {
   vertical-align: middle;
   line-height: 48px;
 }
-
+select {
+  background-color: #b4d8f8;
+}
 footer {
   text-align: center;
   font-family: monospace;
   font-size: 18px;
-  color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
+  color: #b4d8f8;
+}
+a {
+  color: aliceblue;
 }
