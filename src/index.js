@@ -33,7 +33,7 @@ function updateTime() {
 
     honoluluDateElement.innerHTML = honoluluTime.format("MMMM	Do YYYY");
     honoluluTimeElement.innerHTML = honoluluTime.format(
-      "h:mm:ss:SS [<small>]A[</small>]"
+      "h:mm:ss [<small>]A[</small>]"
     );
   }
 }
@@ -51,7 +51,7 @@ function updateCity(event) {
       <h2>${cityName}</h2>
       <div class="date">${cityTime.format("MMMM	Do YYYY")}</div>
     </div>
-    <div class="time">${cityTime.format("h:mm:ss:SS")} <small>${cityTime.format(
+    <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format(
     "A"
   )}</small></div>
   </div>
