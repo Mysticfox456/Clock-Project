@@ -60,6 +60,8 @@ select {
 
 footer {
   text-align: center;
+  font-family: monospace;
   font-size: 18px;
   color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
 }
