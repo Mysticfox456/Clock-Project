@@ -1,13 +1,15 @@
 function updateTime() {
-  //Tokyo
-  let tokyoelement = document.querySelector("#tokyo");
-  if (tokyoelement) {
-    let tokyoDateElement = tokyoelement.querySelector(".date");
-    let tokyoTimeElement = tokyoelement.querySelector(".time");
-    let TokyoTime = moment().tz("Asia/Tokyo");
+  // Tokyo
+  let tokyoElement = document.querySelector("#tokyo");
+  if (tokyoElement) {
+    let tokyoDateElement = tokyoElement.querySelector(".date");
+    let tokyoTimeElement = tokyoElement.querySelector(".time");
+    let tokyoTime = moment().tz("Asia/Tokyo");
 
-    tokyoDateElement.innerHTML = tokyoDate.format("MMMM	Do YYYY");
-    tokyoTimeElement.innerHTML = tokyoTime.format("h:mm:ss [<small>A</small>]");
+    tokyoDateElement.innerHTML = tokyoTime.format("MMMM	Do YYYY");
+    tokyoTimeElement.innerHTML = tokyoTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
   }
 
   // Paris
@@ -22,20 +24,19 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
-  //Honolulu
+  //honolulu
   let honoluluElement = document.querySelector("#honolulu");
   if (honoluluElement) {
     let honoluluDateElement = honoluluElement.querySelector(".date");
     let honoluluTimeElement = honoluluElement.querySelector(".time");
     let honoluluTime = moment().tz("Pacific/Honolulu");
 
-    honoluluElement.innerHTML = honoluluDate.format("MMMM Do YYYY");
+    honoluluDateElement.innerHTML = honoluluTime.format("MMMM	Do YYYY");
     honoluluTimeElement.innerHTML = honoluluTime.format(
-      "h:mm:ss [<small>]A[</small>]"
+      "h:mm:ss:SS [<small>]A[</small>]"
     );
   }
 }
-
 function updateCity(event) {
   let cityTimeZone = event.target.value;
   if (cityTimeZone === "current") {
@@ -45,17 +46,16 @@ function updateCity(event) {
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
   citiesElement.innerHTML = `
-    <div class="city">
+  <div class="city">
     <div>
       <h2>${cityName}</h2>
       <div class="date">${cityTime.format("MMMM	Do YYYY")}</div>
     </div>
-    <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format(
+    <div class="time">${cityTime.format("h:mm:ss:SS")} <small>${cityTime.format(
     "A"
   )}</small></div>
-    </div>
-    <a href="/">All cities</a>
-    `;
+  </div>
+  `;
 }
 
 updateTime();
