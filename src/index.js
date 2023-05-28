@@ -55,14 +55,9 @@ function updateCity(event) {
     "A"
   )}</small></div>
   </div>
-    <a
-          href="/"
-          target=""
-          class="homepage"
-          >Home</a
-        >`;
+  <a href="/">Home</a>
+  `;
 }
-
 updateTime();
 setInterval(updateTime, 1000);
 
